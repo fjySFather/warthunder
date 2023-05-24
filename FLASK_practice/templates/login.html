@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>欢迎来到W.P.T.N</title>
+	<style>
+		body {
+            background-image: url('https://image.baidu.com/search/down?tn=download&ipn=dwnl&word=download&ie=utf8&fr=result&url=https%3A%2F%2Fpic2.zhimg.com%2Fv2-4da8c9a2e97e22a3d8efca9751d496af_1440w.jpg%3Fsource%3D172ae18b&thumburl=https%3A%2F%2Fimg2.baidu.com%2Fit%2Fu%3D642744247%2C4267034357%26fm%3D253%26fmt%3Dauto%26app%3D120%26f%3DJPEG%3Fw%3D1422%26h%3D800');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+		body {
+			background-color: #f7f7f7;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			opacity: 0.7;
+		}
+		
+		form {
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 6px;
+			box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+			width: 500px;
+			margin: 80px auto;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		h1 {
+			text-align: center;
+			margin-top: 0;
+			font-size: 36px;
+			color: #333;
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+		
+		label {
+			display: block;
+			font-size: 20px;
+			font-weight: 400;
+			margin-bottom: 10px;
+			color: #333;
+			text-align: left;
+		}
+		
+		input[type="password"] {
+			font-size: 20px;
+			padding: 8px 10px;
+			border: 1px solid #dddddd;
+			border-radius: 6px;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 15px;
+		}
+		
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			font-size: 24px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 6px;
+			cursor: pointer;
+			margin-top: 15px;
+			transition: background-color 0.3s;
+			width: 200px;
+			display: block;
+			margin: 0 auto;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #666;
+		}
+		
+		img {
+			display: block;
+			margin: 50px auto;
+			max-width: 300px;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="{{ url_for('login') }}">
+		<h1>欢迎来到W.P.T.N，请登录</h1>
+		<label for="password">密码：</label>
+		<input type="hidden" name="method" value="POST">
+		<input type="password" id="password" name="password">
+		<input type="submit" value="登录">
+	</form>
+</body>
+</html>
+
